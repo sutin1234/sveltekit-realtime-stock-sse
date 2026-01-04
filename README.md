@@ -12,6 +12,31 @@ A real-time stock dashboard built with SvelteKit, featuring live updates via Ser
 - 🖼️ **Company Logos**: Integration of real company logos with robust fallback handling.
 - 📊 **Status Monitoring**: Connection status indicators (Connecting, Open, Closed).
 
+## Tech Stack
+
+- **Framework**: SvelteKit (Svelte 5 Runes system)
+- **Styling**: TailwindCSS
+- **Data Handling**: TanStack Table (Headless UI)
+- **Real-time**: Server-Sent Events (SSE)
+- **Deployment**: Vercel
+
+## Project Structure
+
+```
+src/
+├── lib/
+│   ├── components/
+│   │   ├── CompanyLogo.svelte   # Reusable logo component with fallback
+│   │   ├── Sparkline.svelte     # SVG-based sparkline chart
+│   │   └── StockTable.svelte    # Main data table with SSE integration
+│   ├── server/
+│   │   └── stocks.ts            # Mock stock data generator
+│   └── table.svelte.ts          # Svelte 5 reactive table adapter
+├── routes/
+│   └── api/
+│       └── stocks-sse/          # SSE Endpoint for real-time updates
+```
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:

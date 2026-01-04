@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 (2026-01-04)
+
+### Documentation
+
+- **README**: Added Tech Stack details and Project Structure diagram.
+
 ## 1.0.2 (2026-01-04)
 
 ### Refactoring
