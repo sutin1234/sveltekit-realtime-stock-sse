@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.2 (2026-01-04)
+
+### Refactoring
+
+- **Components**: Extracted `Sparkline` and `CompanyLogo` into reusable components.
+- **StockTable**: Simplified table logic using Svelte 5 snippets and removed monolithic code.
+- **Sparkline**: Fixed SVG rendering and hydration issues by ensuring unique gradient IDs.
+
 ## 1.0.1 (2026-01-04)
 
 ### Documentation
