@@ -2,19 +2,15 @@
 
 ![App Preview](src/lib/assets/preview.png)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A real-time stock dashboard built with SvelteKit, featuring live updates via Server-Sent Events (SSE).
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+- ⚡ **Live Updates**: Real-time stock price updates using Server-Sent Events (SSE).
+- 🔄 **Dynamic Sorting**: Auto-sorts stocks by price (High to Low) with smooth FLIP animations.
+- 🎨 **Visual Feedback**: Real-time visual cues (green/red flashes) for price changes.
+- 🖼️ **Company Logos**: Integration of real company logos with robust fallback handling.
+- 📊 **Status Monitoring**: Connection status indicators (Connecting, Open, Closed).
 
 ## Developing
 
@@ -37,4 +33,41 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deployment
+
+This project is configured with `@sveltejs/adapter-vercel` for seamless deployment to Vercel.
+
+### Deploying to Vercel
+
+1. **Push to GitHub**: Ensure your code is pushed to a GitHub repository.
+2. **Import Project**: Go to [Vercel Dashboard](https://vercel.com/dashboard) and click "Add New... > Project".
+3. **Select Repository**: Choose your GitHub repository.
+4. **Deploy**: Vercel will automatically detect the SvelteKit framework and optimized build settings. Click "Deploy".
+
+The `svelte.config.js` is already set up to use the Vercel adapter:
+
+```js
+import adapter from '@sveltejs/adapter-vercel';
+
+export default {
+    kit: { adapter: adapter() }
+};
+```
+
+### Deploying via CLI
+
+You can also deploy directly from your terminal using the Vercel CLI:
+
+```sh
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy to preview (development)
+vercel
+
+# Deploy to production
+vercel --prod
+```
