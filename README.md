@@ -1,4 +1,6 @@
-# sv
+# Real-time Stock Table (SSE)
+
+![App Preview](src/lib/assets/preview.png)
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
