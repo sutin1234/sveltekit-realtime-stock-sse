@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4 (2026-01-04)
+
+### Documentation
+
+- **AGENTS**: Added `AGENTS.md` to provide context and guidelines for AI agents working on the codebase.
+
 ## 1.0.3 (2026-01-04)
 
 ### Documentation
